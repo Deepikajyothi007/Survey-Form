@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Survey-Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Diet questionnaire</h1>
+    <p id="description"><b>Help us understand your diet habits!</b><br>Share your food preferences,restrictions,and
+        satisfaction levels,Your input will shape our reseach.</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label"> Name: <input id="name" type="text" required placeholder="Full Name"
+                    value="Deepika Jyothi" /></label>
+            <label id="email-label"> Email:<input id="email" type="email" placeholder="user@gmail.com" required
+                    value="deepikajyothi511@gmail.com" /></label>
+            <label id="number-label">Age:<input id="number" type="number" max="60" min="18" required
+                    placeholder="inYears" value="19" /></label>
+        </fieldset>
+        <fieldset>
+            <legend>What is Your Diet Type?</legend>
+            <label><input type="radio" name="diet-type" value="Vegan" />Vegan</label>
+            <label><input type="radio" name="diet-type" value="Vegetarian" />Vegetarian</label>
+            <label><input type="radio" name="diet-type" value="Non-Vegetarian" />Non-Vegetarian</label>
+        </fieldset>
+        <fieldset>
+            <legend>Do you purchase the following(select all that apply)</legend>
+            <label><input type="checkbox" value="Whole Foods Only" />Whole Foods Only</label>
+            <label><input type="checkbox" value="Beyond Meat" />Beyond Meat</label>
+            <label><input type="checkbox" value="Plant Chef" />Plant Chef</label>
+            <label><input type="checkbox" value="Quorn" />Quorn</label>
+        </fieldset>
+        <fieldset>
+            <legend>How often do you consume fast food?</legend>
+            <select id="dropdown">
+                <option>Daily</option>
+                <option>Once a Week</option>
+                <option>Twice a Week</option>
+                <option>Once in Month</option>
+                <option>Never</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label>Any other comments are much appreciated<textarea required></textarea></label>
+        </fieldset>
+
+        <input type="submit" id="submit">
+
+    </form>
+
+</body>
+
+</html>
